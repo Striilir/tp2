@@ -21,7 +21,7 @@ import java.util.concurrent.TimeoutException;
 
 import static org.mockito.Mockito.verify;
 
-@Disabled
+
 @ExtendWith(ApplicationExtension.class)
 public class TestApplicationLifeCycle {
 
@@ -51,7 +51,6 @@ public class TestApplicationLifeCycle {
         verify(out).println("constructeur ApplicationLifeCycle()");
     }
 
-    @Disabled
     @Test
     public void init() {
         verify(out).println("init()");

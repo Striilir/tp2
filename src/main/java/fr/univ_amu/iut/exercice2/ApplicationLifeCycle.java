@@ -6,6 +6,7 @@ import javafx.stage.Stage;
 public class ApplicationLifeCycle extends Application {
 
     public ApplicationLifeCycle() {
+        System.out.println("constructeur ApplicationLifeCycle()");
     }
 
     public static void main(String[] args) {
@@ -16,7 +17,9 @@ public class ApplicationLifeCycle extends Application {
 
     @Override
     public void init() throws Exception {
-
+        System.out.println(
+                "init()"
+        );
     }
 
     @Override

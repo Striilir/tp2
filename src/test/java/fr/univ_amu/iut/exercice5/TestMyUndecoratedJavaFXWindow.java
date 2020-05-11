@@ -82,7 +82,6 @@ public class TestMyUndecoratedJavaFXWindow {
         assertEquals(800, stage.getWidth());
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_is_undecorated() {
         assertEquals(StageStyle.UNDECORATED, stage.getStyle());

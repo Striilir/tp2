@@ -23,7 +23,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
 
-@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestHelloBeautifulButton {
 
@@ -57,37 +56,32 @@ public class TestHelloBeautifulButton {
         robot.release(new MouseButton[]{});
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_with_correct_title() {
         assertEquals("Hello !", stage.getTitle());
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_with_height_of_250() {
         assertEquals(250, stage.getHeight());
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_with_width_of_250() {
         assertEquals(250, stage.getWidth());
     }
 
-    @Disabled
     @Test
     public void should_initialize_button_with_text_hello() {
         verifyThat("#buttonHello", hasText("Hello !"));
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_with_useless_button() {
         verifyThat("#buttonHello", (Button node) -> node.getOnAction() == null);
     }
 
-    @Disabled
+
     @Test
     public void should_initialize_stage_with_a_graphic() {
         verifyThat("#buttonHello", (Button node) -> node.getGraphic() instanceof ImageView);
@@ -96,7 +90,6 @@ public class TestHelloBeautifulButton {
         verifyThat("#buttonHello", (Button node) -> ((ImageView) node.getGraphic()).getImage().getWidth() == 150);
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_is_showing() {
         assertTrue(stage.isShowing());

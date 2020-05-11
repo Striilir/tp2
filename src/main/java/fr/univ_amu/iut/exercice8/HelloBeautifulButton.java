@@ -16,14 +16,15 @@ public class HelloBeautifulButton extends Application {
         primaryStage.setHeight(250);
         primaryStage.setWidth(250);
         BorderPane root = new BorderPane();
-        Scene s = new Scene(root, 250, 250);
-        primaryStage.setScene(s);
+        Scene scene = new Scene(root, 250, 250);
+        primaryStage.setScene(scene);
         ImageView Img = new ImageView("https://raw.githubusercontent.com/IUTInfoAix-M2105/Syllabus/master/assets/logo.png");
         Img.setFitHeight(150);
         Img.setFitWidth(150);
         Button button = new Button("Hello !",Img);
         button.setId("buttonHello");
         root.setCenter(button);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("DarkTheme.css").toExternalForm());
         primaryStage.show();
     }
 }

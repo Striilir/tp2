@@ -56,14 +56,12 @@ public class TestApplicationLifeCycle {
         verify(out).println("init()");
     }
 
-    @Disabled
     @Test
     public void test_stop() throws Exception {
         FxToolkit.setupApplication(ApplicationLifeCycle.class).stop();
         verify(out).println("stop()");
     }
 
-    @Disabled
     @Test
     public void test_life_cycle_output() {
         verify(out).println("constructeur ApplicationLifeCycle()");

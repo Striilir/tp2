@@ -17,5 +17,6 @@ public class MySecondJavaFXWindow extends Application {
         primaryStage.setResizable(false);
         primaryStage.setHeight(400);
         primaryStage.setWidth(800);
+        primaryStage.show();
     }
 }

@@ -1,6 +1,7 @@
 package fr.univ_amu.iut.exercice4;
 
 import javafx.application.Application;
+import javafx.beans.property.BooleanProperty;
 import javafx.stage.Stage;
 
 public class MySecondJavaFXWindow extends Application {
@@ -13,5 +14,6 @@ public class MySecondJavaFXWindow extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Second Useless JavaFX Window");
         primaryStage.setAlwaysOnTop(true);
+        primaryStage.setResizable(false);
     }
 }

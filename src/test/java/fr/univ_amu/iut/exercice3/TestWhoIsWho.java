@@ -21,7 +21,6 @@ import java.util.concurrent.TimeoutException;
 import static org.mockito.Mockito.verify;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestWhoIsWho {
 

@@ -18,7 +18,6 @@ import java.util.concurrent.TimeoutException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestMyUndecoratedJavaFXWindow {
 
@@ -53,13 +52,11 @@ public class TestMyUndecoratedJavaFXWindow {
         robot.release(new MouseButton[]{});
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_is_not_showing() {
         assertFalse(stage.isShowing());
     }
 
-    @Disabled
     @Test
     public void should_initialize_stage_with_correct_title() {
         assertEquals("Undecorated Useless JavaFX Window", stage.getTitle());

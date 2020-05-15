@@ -15,13 +15,16 @@ public class HelloBeautifulUsefulButton extends Application {
         primaryStage.setWidth(250);
         BorderPane root = new BorderPane();
         Scene s = new Scene(root, 250, 250);
+        s.getStylesheets().add(getClass().getClassLoader().getResource("DarkTheme.css").toExternalForm());
         primaryStage.setScene(s);
-        ImageView Img = new ImageView("https://raw.githubusercontent.com/IUTInfoAix-M2105/Syllabus/master/assets/logo.png");
-        Img.setFitHeight(150);
-        Img.setFitWidth(150);
-        Button button = new Button("Hello !",Img);
-        button.setId("buttonHello");
-        root.setCenter(button);
+        ImageView image = new ImageView("https://raw.githubusercontent.com/IUTInfoAix-M2105/Syllabus/master/assets/logo.png");
+        image.setFitHeight(150);
+        image.setFitWidth(150);
+        Button bouton = new Button("Hello !",image);
+        bouton.setId("buttonHello");
+        root.setCenter(bouton);
+        bouton.setOnAction(new EcouteurSimple());
         primaryStage.show();
+
     }
 }
